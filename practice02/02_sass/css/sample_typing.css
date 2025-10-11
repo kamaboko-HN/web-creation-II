@@ -1,0 +1,492 @@
+@charset "UTF-8";
+@keyframes typingWait {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes typing {
+  0% {
+    content: "";
+    color: #fff;
+    font-size: 40px;
+  }
+  1.14943% {
+    content: "";
+    color: #fff;
+    font-size: 40px;
+  }
+  2.29885% {
+    content: "お";
+    color: #fff;
+    font-size: 40px;
+  }
+  3.44828% {
+    content: "おお";
+    color: #fff;
+    font-size: 40px;
+  }
+  4.5977% {
+    content: "おお ";
+    color: #fff;
+    font-size: 40px;
+  }
+  5.74713% {
+    content: "おお ゆ";
+    color: #fff;
+    font-size: 40px;
+  }
+  6.89655% {
+    content: "おお ゆう";
+    color: #fff;
+    font-size: 40px;
+  }
+  8.04598% {
+    content: "おお ゆうし";
+    color: #fff;
+    font-size: 40px;
+  }
+  9.1954% {
+    content: "おお ゆうしゃ";
+    color: #fff;
+    font-size: 40px;
+  }
+  10.34483% {
+    content: "おお ゆうしゃ ";
+    color: #fff;
+    font-size: 40px;
+  }
+  11.49425% {
+    content: "おお ゆうしゃ よ";
+    color: #fff;
+    font-size: 40px;
+  }
+  12.64368% {
+    content: "おお ゆうしゃ よ ";
+    color: #fff;
+    font-size: 40px;
+  }
+  13.7931% {
+    content: "おお ゆうしゃ よ ！";
+    color: #fff;
+    font-size: 40px;
+  }
+  14.94253% {
+    content: "おお ゆうしゃ よ ！ ";
+    color: #fff;
+    font-size: 40px;
+  }
+  16.09195% {
+    content: "おお ゆうしゃ よ ！ し";
+    color: #fff;
+    font-size: 40px;
+  }
+  17.24138% {
+    content: "おお ゆうしゃ よ ！ しん";
+    color: #fff;
+    font-size: 40px;
+  }
+  18.3908% {
+    content: "おお ゆうしゃ よ ！ しんで";
+    color: #fff;
+    font-size: 40px;
+  }
+  19.54023% {
+    content: "おお ゆうしゃ よ ！ しんでし";
+    color: #fff;
+    font-size: 40px;
+  }
+  20.68966% {
+    content: "おお ゆうしゃ よ ！ しんでしま";
+    color: #fff;
+    font-size: 40px;
+  }
+  21.83908% {
+    content: "おお ゆうしゃ よ ！ しんでしまう";
+    color: #fff;
+    font-size: 40px;
+  }
+  22.98851% {
+    content: "おお ゆうしゃ よ ！ しんでしまうと";
+    color: #fff;
+    font-size: 40px;
+  }
+  24.13793% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは";
+    color: #fff;
+    font-size: 40px;
+  }
+  25.28736% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは ";
+    color: #fff;
+    font-size: 40px;
+  }
+  26.43678% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは な";
+    color: #fff;
+    font-size: 40px;
+  }
+  27.58621% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさ";
+    color: #fff;
+    font-size: 40px;
+  }
+  28.73563% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけ";
+    color: #fff;
+    font-size: 40px;
+  }
+  29.88506% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけな";
+    color: #fff;
+    font-size: 40px;
+  }
+  31.03448% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない";
+    color: #fff;
+    font-size: 40px;
+  }
+  32.18391% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…";
+    color: #fff;
+    font-size: 40px;
+  }
+  33.33333% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。";
+    color: #fff;
+    font-size: 40px;
+  }
+  34.48276% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そ";
+    color: #fff;
+    font-size: 40px;
+  }
+  35.63218% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そな";
+    color: #fff;
+    font-size: 40px;
+  }
+  36.78161% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなた";
+    color: #fff;
+    font-size: 40px;
+  }
+  37.93103% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに";
+    color: #fff;
+    font-size: 40px;
+  }
+  39.08046% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに ";
+    color: #fff;
+    font-size: 40px;
+  }
+  40.22989% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに も";
+    color: #fff;
+    font-size: 40px;
+  }
+  41.37931% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もう";
+    color: #fff;
+    font-size: 40px;
+  }
+  42.52874% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もうい";
+    color: #fff;
+    font-size: 40px;
+  }
+  43.67816% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういち";
+    color: #fff;
+    font-size: 40px;
+  }
+  44.82759% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど";
+    color: #fff;
+    font-size: 40px;
+  }
+  45.97701% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど ";
+    color: #fff;
+    font-size: 40px;
+  }
+  47.12644% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど き";
+    color: #fff;
+    font-size: 40px;
+  }
+  48.27586% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きか";
+    color: #fff;
+    font-size: 40px;
+  }
+  49.42529% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかい";
+    color: #fff;
+    font-size: 40px;
+  }
+  50.57471% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを";
+    color: #fff;
+    font-size: 40px;
+  }
+  51.72414% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを ";
+    color: #fff;
+    font-size: 40px;
+  }
+  52.87356% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを あ";
+    color: #fff;
+    font-size: 40px;
+  }
+  54.02299% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを あた";
+    color: #fff;
+    font-size: 40px;
+  }
+  55.17241% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを あたえ";
+    color: #fff;
+    font-size: 40px;
+  }
+  56.32184% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを あたえよ";
+    color: #fff;
+    font-size: 40px;
+  }
+  57.47126% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを あたえよう";
+    color: #fff;
+    font-size: 40px;
+  }
+  58.62069% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを あたえよう。";
+    color: #fff;
+    font-size: 40px;
+  }
+  59.77011% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを あたえよう。　";
+    color: #fff;
+    font-size: 40px;
+  }
+  60.91954% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを あたえよう。　ふ";
+    color: #fff;
+    font-size: 40px;
+  }
+  62.06897% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを あたえよう。　ふた";
+    color: #fff;
+    font-size: 40px;
+  }
+  63.21839% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを あたえよう。　ふたた";
+    color: #fff;
+    font-size: 40px;
+  }
+  64.36782% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを あたえよう。　ふたたび";
+    color: #fff;
+    font-size: 40px;
+  }
+  65.51724% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを あたえよう。　ふたたび ";
+    color: #fff;
+    font-size: 40px;
+  }
+  66.66667% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを あたえよう。　ふたたび こ";
+    color: #fff;
+    font-size: 40px;
+  }
+  67.81609% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを あたえよう。　ふたたび この";
+    color: #fff;
+    font-size: 40px;
+  }
+  68.96552% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを あたえよう。　ふたたび このよ";
+    color: #fff;
+    font-size: 40px;
+  }
+  70.11494% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを あたえよう。　ふたたび このよう";
+    color: #fff;
+    font-size: 40px;
+  }
+  71.26437% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを あたえよう。　ふたたび このような";
+    color: #fff;
+    font-size: 40px;
+  }
+  72.41379% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを あたえよう。　ふたたび このようなこ";
+    color: #fff;
+    font-size: 40px;
+  }
+  73.56322% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを あたえよう。　ふたたび このようなこと";
+    color: #fff;
+    font-size: 40px;
+  }
+  74.71264% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを あたえよう。　ふたたび このようなことが";
+    color: #fff;
+    font-size: 40px;
+  }
+  75.86207% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを あたえよう。　ふたたび このようなことが ";
+    color: #fff;
+    font-size: 40px;
+  }
+  77.01149% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを あたえよう。　ふたたび このようなことが な";
+    color: #fff;
+    font-size: 40px;
+  }
+  78.16092% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを あたえよう。　ふたたび このようなことが ない";
+    color: #fff;
+    font-size: 40px;
+  }
+  79.31034% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを あたえよう。　ふたたび このようなことが ないよ";
+    color: #fff;
+    font-size: 40px;
+  }
+  80.45977% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを あたえよう。　ふたたび このようなことが ないよう";
+    color: #fff;
+    font-size: 40px;
+  }
+  81.6092% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを あたえよう。　ふたたび このようなことが ないように";
+    color: #fff;
+    font-size: 40px;
+  }
+  82.75862% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを あたえよう。　ふたたび このようなことが ないようにな";
+    color: #fff;
+    font-size: 40px;
+  }
+  83.90805% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを あたえよう。　ふたたび このようなことが ないようにな。";
+    color: #fff;
+    font-size: 40px;
+  }
+  85.05747% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを あたえよう。　ふたたび このようなことが ないようにな。 ";
+    color: #fff;
+    font-size: 40px;
+  }
+  86.2069% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを あたえよう。　ふたたび このようなことが ないようにな。 で";
+    color: #fff;
+    font-size: 40px;
+  }
+  87.35632% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを あたえよう。　ふたたび このようなことが ないようにな。 では";
+    color: #fff;
+    font-size: 40px;
+  }
+  88.50575% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを あたえよう。　ふたたび このようなことが ないようにな。 では ";
+    color: #fff;
+    font-size: 40px;
+  }
+  89.65517% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを あたえよう。　ふたたび このようなことが ないようにな。 では ゆ";
+    color: #fff;
+    font-size: 40px;
+  }
+  90.8046% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを あたえよう。　ふたたび このようなことが ないようにな。 では ゆけ";
+    color: #fff;
+    font-size: 40px;
+  }
+  91.95402% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを あたえよう。　ふたたび このようなことが ないようにな。 では ゆけ！";
+    color: #fff;
+    font-size: 40px;
+  }
+  93.10345% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを あたえよう。　ふたたび このようなことが ないようにな。 では ゆけ！ ";
+    color: #fff;
+    font-size: 40px;
+  }
+  94.25287% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを あたえよう。　ふたたび このようなことが ないようにな。 では ゆけ！ ゆ";
+    color: #fff;
+    font-size: 40px;
+  }
+  95.4023% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを あたえよう。　ふたたび このようなことが ないようにな。 では ゆけ！ ゆう";
+    color: #fff;
+    font-size: 40px;
+  }
+  96.55172% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを あたえよう。　ふたたび このようなことが ないようにな。 では ゆけ！ ゆうし";
+    color: #fff;
+    font-size: 40px;
+  }
+  97.70115% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを あたえよう。　ふたたび このようなことが ないようにな。 では ゆけ！ ゆうしゃ";
+    color: #fff;
+    font-size: 40px;
+  }
+  98.85057% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを あたえよう。　ふたたび このようなことが ないようにな。 では ゆけ！ ゆうしゃ ";
+    color: #fff;
+    font-size: 40px;
+  }
+  100% {
+    content: "おお ゆうしゃ よ ！ しんでしまうとは なさけない…。そなたに もういちど きかいを あたえよう。　ふたたび このようなことが ないようにな。 では ゆけ！ ゆうしゃ よ";
+    color: #fff;
+    font-size: 40px;
+  }
+}
+.output-text:after {
+  font-size: 40px;
+  content: "";
+  color: white;
+  animation: typing 5s linear 3s alternate forwards;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  51% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.caret-cursor {
+  display: inline-block;
+  height: 44px;
+  width: 2px;
+  margin: 2px 10px;
+  font-size: 40px;
+  background: #fff;
+  vertical-align: text-bottom;
+  animation: blink 0.5s linear infinite alternate;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "fira-sans-2", Helvetica, sans-serif;
+  background-color: #333;
+  font-weight: bold;
+}

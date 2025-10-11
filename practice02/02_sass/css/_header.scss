@@ -1,0 +1,15 @@
+.mainHeader{
+	width:800px;
+	margin: auto;
+
+	.mainTitle{
+		padding: 20px;
+		box-sizing: border-box;
+		background:$themeColor;
+		color: $baseColor;
+		margin-bottom: 10px;
+	}
+	.document{
+		margin-bottom: 10px;
+	}
+}

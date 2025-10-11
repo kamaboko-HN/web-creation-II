@@ -1,0 +1,57 @@
+$baseColor:#fff;
+$themeColor:#023570;
+
+
+.mainHeader{
+	width:800px;
+	margin: auto;
+
+	.mainTitle{
+		padding: 20px;
+		box-sizing: border-box;
+		background:$themeColor;
+		color: $baseColor;
+		margin-bottom: 10px;
+	}
+	.document{
+		margin-bottom: 10px;
+	}
+}
+
+.container{
+	width:800px;
+	margin: auto;
+	margin-bottom:20px ;
+	
+	&__navigation{
+		display: flex;
+		
+		li{
+			width:20%;
+			list-style: none;
+			background: $themeColor;
+		}
+		a{
+			color:$baseColor;
+			text-decoration: none;
+			display: block;
+			padding: 10px;
+			text-align: center;
+			
+			&:hover{
+				background: #0860BD;
+			}
+		}
+	}
+}
+
+.footerArea{
+	width:800px;
+	margin: auto;
+	background:$themeColor;
+	text-align: center;
+	padding: 10px;
+	box-sizing: border-box;
+	color: $baseColor;
+	margin-bottom: 10px;
+}

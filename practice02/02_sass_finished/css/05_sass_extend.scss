@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+
+.button{
+	border-radius: 10px;
+	max-width: 200px;
+	text-align: center;
+	border: 1px solid #999;
+}
+
+.alert{
+	background: #f00;
+}
+
+.primary{
+	background: #337ab7;
+	
+}
+
+.button-alert{
+	@extend .button;
+	@extend .alert;
+	
+	color: #fff;
+}
+
+.button-primary{
+	@extend .button;
+	@extend .primary;
+	
+	color: #fff;
+}
+
+
+//@extendは@mediaの中では使用出来ませんので注意が必要です。
+
+/*
+SASSで書いた、通常のCSSのコメントは、CSSファイルに反映されます。
+*/

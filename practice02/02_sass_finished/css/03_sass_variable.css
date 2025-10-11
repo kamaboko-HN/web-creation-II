@@ -1,0 +1,50 @@
+.mainHeader {
+  width: 800px;
+  margin: auto;
+}
+.mainHeader .mainTitle {
+  padding: 20px;
+  box-sizing: border-box;
+  background: #023570;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.mainHeader .document {
+  margin-bottom: 10px;
+}
+
+.container {
+  width: 800px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.container__navigation {
+  display: flex;
+}
+.container__navigation li {
+  width: 20%;
+  list-style: none;
+  background: #023570;
+}
+.container__navigation a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  text-align: center;
+}
+.container__navigation a:hover {
+  background: #0860BD;
+}
+
+.footerArea {
+  width: 800px;
+  margin: auto;
+  background: #023570;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #fff;
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=03_sass_variable.css.map */

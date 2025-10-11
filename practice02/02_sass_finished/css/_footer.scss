@@ -1,0 +1,11 @@
+@use 'variable';
+.footerArea{
+	width:800px;
+	margin: auto;
+	background:variable.$themeColor;
+	text-align: center;
+	padding: 10px;
+	box-sizing: border-box;
+	color: variable.$baseColor;
+	margin-bottom: 10px;
+}

@@ -1,0 +1,34 @@
+
+.mainHeader{
+	width:800px;
+	margin: auto;
+	
+	.mainTitle{
+		padding: 20px;
+		box-sizing: border-box;
+		background:#023570;
+		color: #fff;
+		margin-bottom: 10px;
+	}
+	
+	.document{
+		margin: 10px;
+		padding:20px;
+		border:{
+			width: 2px;
+			style: solid;
+			top:{
+				color: #333;
+			}
+			left:{
+				color: #333;
+			}
+			right:{
+				color: #ccc;
+			}
+			bottom:{
+				color: #ccc;
+			}
+		}
+	}	
+}

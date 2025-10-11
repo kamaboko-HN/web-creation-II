@@ -1,0 +1,22 @@
+.mainHeader {
+  width: 800px;
+  margin: auto;
+}
+.mainHeader .mainTitle {
+  padding: 20px;
+  box-sizing: border-box;
+  background: #023570;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.mainHeader .document {
+  margin: 10px;
+  padding: 20px;
+  border-width: 2px;
+  border-style: solid;
+  border-top-color: #333;
+  border-left-color: #333;
+  border-right-color: #ccc;
+  border-bottom-color: #ccc;
+}
+/*# sourceMappingURL=02_sass_basic_property.css.map */

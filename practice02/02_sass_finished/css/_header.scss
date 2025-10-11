@@ -1,0 +1,16 @@
+@use 'variable';
+.mainHeader{
+	width:800px;
+	margin: auto;
+
+	.mainTitle{
+		padding: 20px;
+		box-sizing: border-box;
+		background: variable.$themeColor;
+		color: variable.$baseColor;
+		margin-bottom: 10px;
+	}
+	.document{
+		margin-bottom: 10px;
+	}
+}
