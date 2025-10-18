@@ -1,6 +1,9 @@
-@charset "utf-8";
-
 @use "_variables" as *;
+
+@mixin button-hover($bg-color: $primary-color, $text-color: $secondary-color) {
+    background: $bg-color;
+    color: $text-color;
+}
 
 .button {
     -moz-appearance: none;
@@ -28,16 +31,14 @@
     transition: $button-transition-settings;
 
     &:hover {
-        background: $primary-color;
-        color: $secondary-color;
+        @include button-hover();
     }
     .alt {
         border-color: inherit;
         color: inherit;
 
         &:hover {
-            background: $secondary-color;
-            color: $primary-color;
+            @include button-hover($secondary-color, $primary-color);
         }
     }
 

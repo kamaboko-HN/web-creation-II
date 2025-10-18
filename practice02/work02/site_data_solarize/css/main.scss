@@ -1,8 +1,29 @@
 @charset "utf-8";
 
-@use "_variables";
-@use "header";
-@use "button";
-@use "wrapper";
-@use "dropotron";
-@use "banner";
+@use "_variables" as *;
+
+#main {
+    padding: 4em 0;
+
+    #content .major, #sidebar .major {
+        text-align: left;
+    }
+
+    #sidebar {
+        section {
+            margin-top: 4em;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+
+        .major {
+            padding-bottom: 2em;
+
+            h2 {
+                font-size: 1.8em;
+            }
+        }
+    }
+}
