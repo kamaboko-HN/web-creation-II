@@ -70,11 +70,11 @@
                 margin-left: 0;
             }
 
-            .active a {
+            &.active a {
                 color: white;
             }
 
-            ul {
+            > ul {
                 display: none;
             }
         }

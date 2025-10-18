@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@use "_variables" as *;
+@use "variables" as *;
 
 .button {
     -moz-appearance: none;
@@ -31,7 +31,7 @@
         background: $primary-color;
         color: $secondary-color;
     }
-    .alt {
+    &.alt {
         border-color: inherit;
         color: inherit;
 
@@ -41,11 +41,11 @@
         }
     }
 
-    .fit {
+    &.fit {
         width: 100%;
     }
 
-    .small {
+    &.small {
         font-size: 0.8em;
     }
 }

@@ -5,13 +5,13 @@
 .wrapper {
     padding: 6em 0em 4em 0em;
 
-    .style1 {
+    &.style1 {
         padding: 0em;
         background: #222222 url(../images/banner.jpg) no-repeat;
         background-size: cover;
     }
 
-    .style2 {
+    &.style2 {
         background: #f2f2f2;
 
         .major {
@@ -46,7 +46,7 @@
         }
     }
 
-    .style3 {
+    &.style3 {
         padding-bottom: 6em;
         background: $primary-color;
         text-align: center;
@@ -62,11 +62,11 @@
         }
     }
 
-    .style4 {
+    &.style4 {
         background: $secondary-color;
     }
 
-    .style5 {
+    &.style5 {
         background: $primary-color;
         text-align: center;
         color: $secondary-color;

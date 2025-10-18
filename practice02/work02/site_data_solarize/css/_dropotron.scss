@@ -22,12 +22,12 @@
             text-transform: uppercase;
         }
 
-        .active > a, &:hover > a {
+        &.active > a, &:hover > a {
             color: inherit;
         }
     }
 
-    .level-0 {
+    &.level-0 {
         border-radius: 0 0 4px 4px;
         font-size: 1em;
         margin-left: -0.5em;
