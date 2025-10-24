@@ -1,0 +1,15 @@
+.address-table {
+  width: 90%;
+  border-collapse: collapse;
+}
+.address-table td, .address-table th {
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+.address-table th {
+  font-weight: bold;
+}
+.address-table thead th {
+  background: #e6e6e6;
+}
+/*# sourceMappingURL=01_table.css.map */

@@ -1,0 +1,14 @@
+.address-table{
+	width: 90%;
+	border-collapse: collapse;
+	td,th{
+		padding: 5px;
+		border: 1px solid #ccc;
+	}
+	th{
+		font-weight: bold;
+	}
+	thead th{
+		background:#e6e6e6;
+	}
+}

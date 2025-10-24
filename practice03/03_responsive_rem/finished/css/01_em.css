@@ -1,0 +1,17 @@
+html{
+    font-size: 24px;
+}
+
+div{
+    line-height: 2em;
+    font-size: 0.8em;
+}
+
+
+/* モニタ480px以下 */
+
+@media only screen and (max-width:480px) {
+    body{
+        font-size: 36px;
+    }
+}

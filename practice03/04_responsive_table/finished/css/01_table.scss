@@ -1,0 +1,48 @@
+.address-table{
+	width: 90%;
+	border-collapse: collapse;
+	td,th{
+		padding: 5px;
+		border: 1px solid #ccc;
+	}
+	th{
+		font-weight: bold;
+	}
+	thead th{
+		background:#e6e6e6;
+	}
+}
+
+
+@media only screen and (max-width:800px){
+	.address-table{
+		display: block;
+		
+		thead{
+        	display: none;
+    	}
+		tbody{
+			display: block;
+			tr{
+				display: block;
+				margin-bottom: 1.5em;
+			}
+			th,td{
+				display: list-item;
+				list-style: none;
+				border: none;
+			}
+			td:first-child{
+				margin-bottom: 0.5em;
+				list-style-type: none;
+				color: #fff;
+				background: #000;
+				padding: 0.5em;
+			}
+			td:nth-of-type(n+2):before{
+				margin-left: 10px;
+				content: attr(data-label); 
+			}
+		}
+	}
+}

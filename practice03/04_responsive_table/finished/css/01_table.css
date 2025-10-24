@@ -1,0 +1,57 @@
+/* line 1, ../scss/01_table.scss */
+.address-table {
+  width: 90%;
+  border-collapse: collapse;
+}
+/* line 4, ../scss/01_table.scss */
+.address-table td, .address-table th {
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+/* line 8, ../scss/01_table.scss */
+.address-table th {
+  font-weight: bold;
+}
+/* line 11, ../scss/01_table.scss */
+.address-table thead th {
+  background: #e6e6e6;
+}
+
+@media only screen and (max-width: 800px) {
+  /* line 18, ../scss/01_table.scss */
+  .address-table {
+    display: block;
+  }
+  /* line 21, ../scss/01_table.scss */
+  .address-table thead {
+    display: none;
+  }
+  /* line 24, ../scss/01_table.scss */
+  .address-table tbody {
+    display: block;
+  }
+  /* line 26, ../scss/01_table.scss */
+  .address-table tbody tr {
+    display: block;
+    margin-bottom: 1.5em;
+  }
+  /* line 30, ../scss/01_table.scss */
+  .address-table tbody th, .address-table tbody td {
+    display: list-item;
+    list-style: none;
+    border: none;
+  }
+  /* line 35, ../scss/01_table.scss */
+  .address-table tbody td:first-child {
+    margin-bottom: 0.5em;
+    list-style-type: none;
+    color: #fff;
+    background: #000;
+    padding: 0.5em;
+  }
+  /* line 42, ../scss/01_table.scss */
+  .address-table tbody td:nth-of-type(n+2):before {
+    margin-left: 10px;
+    content: attr(data-label);
+  }
+}
