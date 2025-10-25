@@ -1,27 +1,50 @@
 @charset "UTF-8";
 
+@use 'variables';
+
 header {
     height: 70px;
+    width: 100em;
     width: auto;
     display: flex;
 
     .logo {
     height: 49.22px;
     width: 293px;
+    margin: auto 0;
     }
 
     .global-nav {
+        display: inline;
         list-style: none;
-        float: right;
-        margin-top: 20px;
+        margin: auto 0;
+        margin-right: 0px;
+        margin-left: auto;
 
         li {
-            display: inline;
-            margin-left: 30px;
+            display: inline-flex;
+            margin-left: 1px;
+            width: 76px;
+            height: 35px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
 
             a {
+                font-size: 12px;
                 text-decoration: none;
                 color: #000;
+            }
+
+            &.subscription {
+                background-color: variables.$button-color;
+                border-radius: 4px;
+
+                a {
+                    color: #fff;
+                    font-size: 12px;
+                    text-decoration: none;
+                }
             }
         }
     }

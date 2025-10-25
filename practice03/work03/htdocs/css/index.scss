@@ -1,13 +1,12 @@
 @charset "UTF-8";
 
 @use 'variables';
+@use 'body';
 @use 'header';
 @use 'main';
 @use 'table';
 @use 'footer';
 
-body {
-    background-color: #fff;
-}
+
 
 

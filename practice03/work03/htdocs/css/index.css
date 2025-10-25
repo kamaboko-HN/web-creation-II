@@ -1,3 +1,12 @@
+@charset "UTF-8";
+h1, h2, h3, h4, p, li, a, tr, small {
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif；;
+}
+
+body {
+  background-color: #fff;
+}
+
 header {
   height: 70px;
   width: auto;
@@ -6,22 +15,36 @@ header {
 header .logo {
   height: 49.22px;
   width: 293px;
+  margin: auto 0;
 }
 header .global-nav {
+  display: inline;
   list-style: none;
-  float: right;
-  margin-top: 20px;
+  margin: auto 0;
+  margin-right: 0px;
+  align-items: end;
 }
 header .global-nav li {
-  display: inline;
-  margin-left: 30px;
+  display: inline-flex;
+  margin-left: 1px;
+  width: 76px;
+  height: 35px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 header .global-nav li a {
+  font-size: 12px;
   text-decoration: none;
   color: #000;
 }
-
-body {
-  background-color: #fff;
+header .global-nav li.subscription {
+  background-color: #FF532A;
+  border-radius: 4px;
+}
+header .global-nav li.subscription a {
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
 }
 /*# sourceMappingURL=index.css.map */
