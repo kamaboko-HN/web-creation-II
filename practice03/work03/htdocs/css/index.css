@@ -7,24 +7,26 @@ body {
   background-color: #fff;
 }
 
-header {
+header .header-container {
   height: 70px;
-  width: auto;
+  max-width: 960px;
+  width: 100%;
   display: flex;
+  margin: 0 auto;
 }
-header .logo {
+header .header-container .logo {
   height: 49.22px;
   width: 293px;
   margin: auto 0;
+  margin-left: 21px;
 }
-header .global-nav {
+header .header-container .global-nav {
   display: inline;
   list-style: none;
   margin: auto 0;
-  margin-right: 0px;
-  align-items: end;
+  margin-left: auto;
 }
-header .global-nav li {
+header .header-container .global-nav li {
   display: inline-flex;
   margin-left: 1px;
   width: 76px;
@@ -33,18 +35,251 @@ header .global-nav li {
   align-items: center;
   justify-content: center;
 }
-header .global-nav li a {
+header .header-container .global-nav li a {
   font-size: 12px;
   text-decoration: none;
   color: #000;
 }
-header .global-nav li.subscription {
+header .header-container .global-nav li.subscription {
   background-color: #FF532A;
   border-radius: 4px;
 }
-header .global-nav li.subscription a {
+header .header-container .global-nav li.subscription a {
   color: #fff;
   font-size: 12px;
   text-decoration: none;
+}
+header .topNav {
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 959.99px) {
+  .global-nav {
+    padding-right: 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .global-nav {
+    visibility: hidden;
+  }
+  .hamburger {
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    height: 40px;
+    margin: auto 0;
+    margin-right: 15px;
+    border: #333333 solid 2px;
+  }
+  .hamburger span {
+    display: block;
+    height: 2px;
+    width: 26px;
+    background-color: #333333;
+    margin: 0 auto;
+    margin-top: 8.5px;
+  }
+  .topNav.active {
+    width: 100%;
+    visibility: hidden;
+  }
+  .topNav.active ul {
+    list-style: none;
+  }
+  .topNav.active ul li {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    border-top: solid #CCCCCC 1px;
+    padding-left: 25.52px;
+  }
+  .topNav.active ul li:nth-child(1) {
+    border-top: solid #CCCCCC 3px;
+  }
+  .topNav.active ul li a {
+    text-decoration: none;
+    color: #000;
+  }
+  .topNav.active ul li .arrow {
+    height: 10px;
+    width: 10px;
+    margin-right: 60px;
+    border-top: solid #CCCCCC 3px;
+    border-right: solid #CCCCCC 3px;
+    display: inline-block;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin-left: auto;
+  }
+}
+main {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main-visual {
+  width: 100%;
+  height: 480px;
+  background: url("../images/main.jpg") no-repeat center/cover;
+}
+.main-visual h1, .main-visual h2, .main-visual a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+}
+.main-visual h1 {
+  font-size: 31px;
+  padding-top: 125px;
+  line-height: 40.25px;
+}
+.main-visual h2 {
+  font-size: 18px;
+  line-height: 40.25px;
+  margin-bottom: 55px;
+  font-weight: normal;
+}
+.main-visual a {
+  text-decoration: none;
+  height: 50px;
+  width: 328px;
+  background: #FF532A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+section {
+  max-width: 923.5px;
+  width: 100%;
+  margin: 0 auto;
+}
+section .section-title, section.price > .section-title {
+  font-size: 24px;
+  line-height: 40.25px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 57.12px;
+  padding-bottom: 61.88px;
+}
+section.features .features-container {
+  display: flex;
+  justify-content: space-between;
+}
+section.features .features-container .feature {
+  width: 280px;
+}
+section.features .features-container .feature > h3 {
+  width: 280px;
+  height: 40px;
+  background-color: #333333;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 40.25px;
+  color: #FFFFFF;
+  text-align: center;
+}
+section.features .features-container .feature > p {
+  width: 259px;
+  height: 155px;
+  margin: 0 auto;
+  margin-top: 17.32px;
+  font-size: 14px;
+  line-height: 24px;
+}
+section.price > .section-title {
+  padding-top: 22.8px;
+  padding-bottom: 46.88px;
+}
+section.price > p {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  margin-bottom: 16px;
+}
+section.price > p.bottom {
+  margin-bottom: 72px;
+}
+section.price .price-table {
+  width: 100%;
+  margin-bottom: 10.5px;
+}
+section.price .price-table tr {
+  height: 42px;
+}
+section.price .price-table tr td, section.price .price-table tr th {
+  border: #CCCCCC 1px solid;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  vertical-align: middle;
+  font-weight: normal;
+}
+section.price .price-table tr th {
+  background-color: #333333;
+  color: #FFFFFF;
+}
+section.price .price-table tr td:nth-child(1) {
+  background-color: #F0F4F7;
+  font-weight: bold;
+}
+section.price .price-table tr:nth-child(2n+1) td {
+  background-color: #F5F5F5;
+}
+section.price .price-table tr:nth-child(2n+1) td td:nth-child(1) {
+  background-color: #E7E9EC;
+}
+
+@media only screen and (max-width: 959.99px) {
+  main {
+    margin: 0;
+  }
+  section.features .features-container {
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+  }
+  section.features .features-container .feature {
+    margin-bottom: 20px;
+  }
+  section.price {
+    margin-left: 40px;
+    margin-right: 40px;
+    width: calc(100% - 80px);
+  }
+  section.price .price-table {
+    width: 100%;
+  }
+}
+footer .footer-nav, footer .copyright {
+  height: 60px;
+  background-color: #666666;
+  list-style: none;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 41.91px;
+}
+footer .footer-nav a, footer .copyright a {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 16px;
+  font-size: 14px;
+  line-height: 18px;
+}
+footer .copyright {
+  height: 39.5px;
+  background-color: #000000;
+  padding-left: 39.51px;
+  color: #fff;
+  font-weight: lighter;
 }
 /*# sourceMappingURL=index.css.map */

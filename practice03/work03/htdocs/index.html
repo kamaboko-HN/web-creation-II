@@ -10,14 +10,30 @@
 </head>
 <body>
     <header>
-        <img class="logo" src="images/logo.png" alt="DHSERVER">
-        <ul class="global-nav">
-            <li><a href="#">サービス</a></li>
-            <li><a href="#">オプション</a></li>
-            <li><a href="#">サポート</a></li>
-            <li><a href="#">ログイン</a></li>
-            <li class="subscription"><a href="#">お申込み</a></li>
-        </ul>
+        <div class="header-container">
+            <img class="logo" src="images/logo.png" alt="DHSERVER">
+            <ul class="global-nav">
+                <li><a href="#">サービス</a></li>
+                <li><a href="#">オプション</a></li>
+                <li><a href="#">サポート</a></li>
+                <li><a href="#">ログイン</a></li>
+                <li class="subscription"><a href="#">お申込み</a></li>
+            </ul>
+            <a class="hamburger" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+        <div class="topNav">
+            <ul>
+                <li><a href="#">サービス</a><div class="arrow"></div></li>
+                <li><a href="#">オプション</a><div class="arrow"></div></li>
+                <li><a href="#">サポート</a><div class="arrow"></div></li>
+                <li><a href="#">ログイン</a><div class="arrow"></div></li>
+            </ul>
+        </div>
+        
     </header>
 
     <main>
@@ -28,8 +44,8 @@
         </div>
 
         <section class="features">
-            <h2 class="features-title">DHSERVERの特徴</h2>
-            <div>
+            <h2 class="section-title">DHSERVERの特徴</h2>
+            <div class="features-container">
                 <div class="feature">
                     <h3>マルチドメイン50個</h3>
                     <p>レンタルサーバーに設定できる独自ドメイン数は50個です。複数のウェブサイトを1つのアカウントで運営することもできます。複数のクライアントのサイト運営に最適です。</p>
@@ -49,7 +65,7 @@
         </section>
 
         <section class="price">
-            <h2 class="price-title">料金</h2>
+            <h2 class="section-title">料金</h2>
             <p>お支払い時に「3ヶ月」「6ヶ月」「12ヶ月」「24ヶ月」「36ヶ月」のうち、任意の契約期間をご選択ください。</p>
             <table class="price-table">
                 <tr class="price-header">
@@ -89,7 +105,7 @@
                     <td>26,200円（税込28,820円）</td>
                 </tr>
             </table>
-            <p>※初回は「合計金額」の一括前払いでのお支払いになります。月単位での分割支払い・後払いには対応しておりません。</p>
+            <p class="bottom">※初回は「合計金額」の一括前払いでのお支払いになります。月単位での分割支払い・後払いには対応しておりません。</p>
         </section>
     </main>
 
@@ -104,7 +120,7 @@
             <li><a href="#">お問い合わせ</a></li>
         </ul>
 
-        <small class="copyright">2019 DHSERVER Inc.※架空の企業です。申込みはできません。</small>
+        <small class="copyright">© 2019 DHSERVER Inc.※架空の企業です。申込みはできません。</small>
     </footer>
 </body>
 </html>

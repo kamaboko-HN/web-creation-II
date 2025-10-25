@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+@use 'variables';
+
+footer {
+    .footer-nav {
+        height: 60px;
+        background-color: variables.$secondary-color;
+        list-style: none;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        padding-left: 41.91px;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            margin-right: 16px;
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+
+    .copyright {
+        @extend .footer-nav;
+        height: 39.5px;
+        background-color: variables.$footer-bg-color;
+        padding-left: 39.51px;
+        color: #fff;
+        font-weight: lighter;
+    }
+}
