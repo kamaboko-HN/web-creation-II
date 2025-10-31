@@ -1,0 +1,59 @@
+.container {
+  color: #ffffff;
+}
+.container__content {
+  padding: 16px;
+  font-size: 24px;
+}
+.container__content__1 {
+  background: #0085c3;
+}
+.container__content__2 {
+  background: #7ab800;
+}
+.container__content__3 {
+  background: #f2af00;
+}
+.container__content__4 {
+  background: #dc5034;
+}
+.container__content__5 {
+  background: #ce1126;
+}
+.container__content__6 {
+  background: #b7295a;
+}
+.container__content__7 {
+  background: #6e2585;
+}
+.container__content__8 {
+  background: #71c6c1;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    display: grid;
+    grid-template-rows: 100px 100px 1fr 100px;
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-areas: "title  title  title " "nav    main   ad    " "nav    main   side  " "footer footer footer";
+  }
+  .container__content__1 {
+    grid-area: title;
+  }
+  .container__content__2 {
+    grid-area: nav;
+  }
+  .container__content__3 {
+    grid-area: main;
+  }
+  .container__content__4 {
+    grid-area: ad;
+  }
+  .container__content__5 {
+    grid-area: side;
+  }
+  .container__content__6 {
+    grid-area: footer;
+  }
+}
+/*# sourceMappingURL=02_cssgrid.css.map */

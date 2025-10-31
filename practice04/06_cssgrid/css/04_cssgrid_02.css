@@ -1,0 +1,44 @@
+.container {
+  color: #ffffff;
+}
+.container__content {
+  padding: 16px;
+  font-size: 24px;
+  border-radius: 10px;
+}
+.container__content__1 {
+  background: #0085c3;
+}
+.container__content__2 {
+  background: #7ab800;
+}
+.container__content__3 {
+  background: #f2af00;
+}
+.container__content__4 {
+  background: #dc5034;
+}
+.container__content__5 {
+  background: #ce1126;
+}
+.container__content__6 {
+  background: #b7295a;
+}
+.container__content__7 {
+  background: #6e2585;
+}
+.container__content__8 {
+  background: #71c6c1;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    display: grid;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    row-gap: 10px;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 200px 200px 1fr;
+  }
+}
+/*# sourceMappingURL=04_cssgrid_02.css.map */

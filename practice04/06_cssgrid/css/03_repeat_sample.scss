@@ -1,0 +1,14 @@
+.grid-container {
+    width: 100%;
+    background-color: lightgray;
+    padding: 10px;
+    box-sizing: border-box;
+
+    .grid-item {
+        background-color: rgb(29, 188, 241);
+        padding: 20px;
+        font-size: 24px;
+        color: #fff;
+        box-sizing: border-box;
+    }
+  }

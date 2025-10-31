@@ -1,0 +1,37 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 1fr auto auto;
+  gap: 20px;
+}
+.grid-container .card {
+  display: grid;
+  grid-row: span 4;
+  grid-template-rows: subgrid;
+  gap: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.grid-container .card .title {
+  font-weight: bold;
+  padding: 10px 0;
+  margin: 0;
+}
+.grid-container .card .image {
+  max-width: 100%;
+  height: auto;
+}
+.grid-container .card .caption {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+.grid-container .card .read-more {
+  text-align: center;
+  background-color: #3498db;
+  color: white;
+  padding: 5px;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+}
+/*# sourceMappingURL=01_subgrid.css.map */

@@ -1,0 +1,28 @@
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(4, 200px); /* 4行のグリッド */
+    /*
+    上記は以下と同じ意味
+    grid-template-rows: 200px 200px 200px 200px;
+    */
+    grid-template-columns: repeat(3, minmax(200px,1fr)); /* 3列のグリッド */
+    /*
+    上記は以下と同じ意味
+    grid-template-rows: minmax(200px,1fr)　minmax(200px,1fr)　minmax(200px,1fr);
+    minmax(a,b);→aが最小値、bが最大値
+    minmax(200px,1fr);のケースでは、横幅は最低200px固定、それ以上は比率１で可変という意味
+    */
+    gap: 10px;
+    width: 100%;
+    background-color: lightgray;
+    padding: 10px;
+    box-sizing: border-box;
+
+    .grid-item {
+        background-color: rgb(29, 188, 241);
+        padding: 20px;
+        font-size: 24px;
+        color: #fff;
+        box-sizing: border-box;
+    }
+  }

@@ -1,0 +1,50 @@
+.container {
+  color: #ffffff;
+}
+.container__content {
+  padding: 16px;
+  font-size: 24px;
+  border-radius: 10px;
+}
+.container__content__1 {
+  background: #0085c3;
+}
+.container__content__2 {
+  background: #7ab800;
+}
+.container__content__3 {
+  background: #f2af00;
+}
+.container__content__4 {
+  background: #dc5034;
+}
+.container__content__5 {
+  background: #ce1126;
+}
+.container__content__6 {
+  background: #b7295a;
+}
+.container__content__7 {
+  background: #6e2585;
+}
+.container__content__8 {
+  background: #71c6c1;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    display: grid;
+    padding: 10px;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    row-gap: 10px;
+    grid-template-rows: repeat(6, 200px 100px);
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    grid-auto-flow: dense;
+  }
+  .container__content__3 {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+}
+/*# sourceMappingURL=04_cssgrid_02.css.map */

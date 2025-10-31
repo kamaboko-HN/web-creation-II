@@ -1,0 +1,88 @@
+@use "variables";
+
+.width-214 {
+    width: 100vw;
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.header {
+    &-top {
+        display: flex;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    &-title {
+        font-family: "Palatino Linotype", "Palatino LT STD", "Book Antiqua", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+        font-size: 14px;
+        color: #3d8ba9;
+        margin-left: 10px;
+        
+        span {
+            font-size: 12px;
+            /* line-height: 17px; */
+        }
+    }
+
+    &-tel {
+        text-align: right;
+        color: black;
+        margin-left: auto;
+        margin-right: 10px;
+
+        p {
+            font-size: 13px;
+            line-height: 21px;
+
+            span {
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    &-nav {
+        display: flex;
+        width: 100%;
+
+        li {
+            flex: 1;
+            text-align: left;
+            list-style: none;
+            background-color: #3d8ba9;
+            width: auto;
+            height: 60px;
+
+            a {
+                display: block;
+                color: white;
+                text-decoration: none;
+                font-size: 12px;
+                padding-top: 10px;
+                padding-left: 10px;
+            }
+        }
+
+        li + li {
+            border-left: 1px solid white;
+        }
+
+        .now-page {
+            background-color: #76c2e4;
+        }
+    }
+}
+
+@media only screen and (min-width: 961px) {
+    .width-214 {
+        width: 273px;
+        margin: 0 30px;
+    }
+
+    .header {
+        &-nav, &-top {
+            flex-direction: column;
+        }
+    }
+}
