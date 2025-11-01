@@ -1,0 +1,109 @@
+@use "variables";
+
+main {
+    margin-right: 20px;
+    padding-top: 20px;
+
+    .main-img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .grid-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4px;
+
+
+        .grid-item {
+            width: auto;
+            height: 144px;
+            flex: 1;
+            background-color: #f4f4f4;
+
+            h3 {
+                height: 30px;
+                font-size: 14px;
+                color: #ffffff;
+                text-align: left;
+                padding-left: 10px;
+                line-height: 30px;
+                // display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: normal;
+            }
+        }
+
+        .color-light {
+            background-color: variables.$secondary-color;
+        }
+
+        .color-deep {
+            background-color: variables.$primary-color;
+        }
+
+        .content-text {
+            margin: 10px;
+            font-size: 12px;
+            line-height: 17px;
+            color: #000;
+            margin-bottom: 7px;
+            font-weight: normal;
+        }
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    main {
+        margin-right: 0;
+
+        .grid-container {
+            width: calc(100vw - 36px);
+            padding: 0 18px;
+
+            .grid-item {
+                height: auto;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    main {
+        margin-right: 0;
+
+        .grid-container {
+            width: calc(100vw - 36px);
+            padding: 0 18px;
+            grid-template-columns: repeat(2, 1fr);
+
+            .grid-item {
+                height: auto;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    main {
+        margin-right: 0;
+
+        .grid-container {
+            width: calc(100vw - 36px);
+            padding: 0 18px;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 10px;
+
+            .grid-item {
+                height: auto;
+            }
+
+            .content-text {
+                height: 63px;
+            }
+        }
+    }
+}

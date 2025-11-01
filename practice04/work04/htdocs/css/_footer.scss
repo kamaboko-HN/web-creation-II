@@ -1,0 +1,50 @@
+@use "variables";
+
+
+footer {
+    padding-top: 35px;
+    padding-left: 30px;
+
+    .footer-navigation {
+        text-align: left;
+        display: flex;
+        font-size: 11px;
+        color: variables.$primary-color;
+        text-decoration: none;
+        list-style: none;
+
+        li {
+            margin-bottom: 20px;
+        }
+
+        li + li {
+            margin-left: 16px;
+        }
+    }
+
+    .copyright {
+        font-size: 11px;
+        color: #000000;
+        text-align: left;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    footer {
+        padding-top: 50px;
+        padding-left: 0;
+        margin: 0 auto;
+        width: calc(100vw - 36px);
+
+        .footer-navigation {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .copyright {
+            text-align: center;
+        }
+    }
+}
