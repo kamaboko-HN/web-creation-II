@@ -1,0 +1,86 @@
+body{
+    background-color: #000;
+}
+
+.content{
+    &_bg{
+        background-attachment: fixed;
+        background-position: top center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+  
+    h1{
+       font-size: 2em;
+        margin-bottom: 0.5em;
+    }
+  
+    p{
+       font-size: 1em;
+        line-height: 1.5em;
+        padding: 5px 20px;
+    }
+ 
+    &__inner{
+        position: relative;
+        width: 100%;
+        margin: auto;
+        padding: 50px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        color: #fff;
+        z-index: 1;
+    }
+    &__inner:before{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: calc( 100% + 30px );
+        top: -15px;
+        left: 0;
+        background-color: #336;
+        transform: skewY(-2deg);
+        z-index: -1;
+      }
+      &__inner:after{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: calc( 100% + 30px );
+        top: -15px;
+        left: 0;
+        background-color: #633;
+        transform: skewY(2deg);
+        z-index: -1;
+      }
+
+}
+
+#first{
+    background-image: url(../images/picture01.jpg);
+    height: 700px;
+}
+
+#second{
+    background-image: url(../images/picture02.jpg);
+    height: 900px;
+}
+
+#third{
+    background-image: url(../images/picture03.jpg);
+     height: 900px;
+}
+
+#fourth{
+    background-image: url(../images/picture04.jpg);
+     height: 900px;
+}
+
+
+#fifth{
+    background-image: url(../images/picture05.jpg);
+     height: 500px;
+}
