@@ -119,6 +119,7 @@ main .main-visual {
   background-image: url("../../images/pic1.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 main .catch-copy {
   width: 100%;
@@ -140,6 +141,7 @@ main .catch-copy h3 {
   line-height: 45px;
   color: #ffffff;
   margin-top: 44px;
+  font-weight: normal;
 }
 main .catch-copy a {
   width: 180px;
@@ -230,6 +232,7 @@ main .content_second > div, main .content_third > div, main .content_fourth > di
 main .content_second .image, main .content_third .image, main .content_fourth .image, main .content_fifth .image, main .content_sixth .image {
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 main .content_second .content-box, main .content_third .content-box, main .content_fourth .content-box, main .content_fifth .content-box, main .content_sixth .content-box {
   display: flex;
@@ -427,6 +430,32 @@ main .content_sixth .image {
   main .content_second .content-box .up-down-button, main .content_third .content-box .up-down-button, main .content_fourth .content-box .up-down-button, main .content_fifth .content-box .up-down-button, main .content_sixth .content-box .up-down-button {
     display: none;
     visibility: hidden;
+  }
+}
+@media only screen and (max-width: 480px) {
+  main .catch-copy h2 {
+    padding-top: 69px;
+  }
+  main .catch-copy a {
+    width: calc(100vw - 40px);
+    margin-bottom: 54px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  main .content_first {
+    padding-top: 25px;
+    margin-bottom: 40px;
+  }
+  main .content .content-box {
+    width: calc(100vw - 40px);
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  main .content .content-box .text-content {
+    margin: 0;
+  }
+  main .content .content-box .text-content h2 {
+    padding-top: 25px;
   }
 }
 .footer {

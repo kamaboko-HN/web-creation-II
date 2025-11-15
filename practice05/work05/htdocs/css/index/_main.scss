@@ -8,6 +8,7 @@ main {
         background-image: url("../../images/pic1.jpg");
         background-size: cover;
         background-position: center;
+        background-attachment: fixed;
     }
 
     .catch-copy {
@@ -31,6 +32,7 @@ main {
             line-height: 45px;
             color: variables.$secondary-color;
             margin-top: 44px;
+            font-weight: normal;
         }
 
         a {
@@ -136,6 +138,7 @@ main {
             .image {
                 background-size: cover;
                 background-position: center;
+                background-attachment: fixed;
             }
 
             .content-box {
@@ -414,6 +417,44 @@ main {
                     .up-down-button {
                         display: none;
                         visibility: hidden;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    main {
+        .catch-copy {
+            h2 {
+                padding-top: 69px;
+            }
+
+            a {
+                width: calc(100vw - 40px);
+                margin-bottom: 54px;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+        }
+
+        .content {
+            &_first {
+                padding-top: 25px;
+                margin-bottom: 40px;
+            }
+
+            .content-box {
+                width: calc(100vw - 40px);
+                margin-left: 20px;
+                margin-right: 20px;
+
+                .text-content {
+                    margin: 0;
+
+                    h2 {
+                        padding-top: 25px;
                     }
                 }
             }
