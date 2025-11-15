@@ -26,6 +26,18 @@ body {
   color: #fff;
   z-index: 1;
 }
+.content__inner::before {
+  content: "";
+  display: block;
+  background-color: #5500AA;
+  width: 100%;
+  height: calc(100% + 50px);
+  z-index: -1;
+  transform: skewY(-5deg);
+  position: absolute;
+  top: -25px;
+  left: 0;
+}
 
 #first {
   background-image: url(../images/picture01.jpg);
