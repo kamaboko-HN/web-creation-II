@@ -352,6 +352,7 @@ main {
             }
             h3 {
                 text-align: left;
+                justify-content: start;
             }
             p {
                 text-align: left;
@@ -360,7 +361,61 @@ main {
 
         .content {
             &_first {
-                text-align: left;
+
+                .content-box {
+                    display: block;
+                    flex-direction: column;
+                    width:auto;
+                    align-items: start;
+                    margin: 0 59px;
+
+                    .text-content {
+                        h3 {
+                            justify-content: start;
+                        }
+                    }
+                }
+            }
+
+            &_second, &_third, &_fourth, &_fifth, &_sixth {
+                height: auto;
+                flex-direction: column;
+                > div {
+                    width: 100%;
+                    box-sizing: border-box;
+                }
+
+                .image {
+                    height: 559px;
+                    order: 0;
+                }
+
+                .content-box {
+                    height: auto;
+
+                    .text-content {
+                        h2 {
+                            padding-top: 40px;
+                        }
+
+                        h2, h3, p {
+                            text-align: left;
+                        }
+
+                        h3 {
+                            justify-content: start;
+                        }
+
+                        a {
+                            margin-bottom: 50px;
+                        }
+                    }
+
+                    .up-down-button {
+                        display: none;
+                        visibility: hidden;
+                    }
+                }
             }
         }
     }

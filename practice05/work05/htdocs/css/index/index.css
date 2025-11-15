@@ -382,28 +382,57 @@ main .content_sixth .image {
   }
   main .text-content h3 {
     text-align: left;
+    justify-content: start;
   }
   main .text-content p {
     text-align: left;
   }
-  main .content_first {
+  main .content_first .content-box {
+    display: block;
+    flex-direction: column;
+    width: auto;
+    align-items: start;
+    margin: 0 59px;
+  }
+  main .content_first .content-box .text-content h3 {
+    justify-content: start;
+  }
+  main .content_second, main .content_third, main .content_fourth, main .content_fifth, main .content_sixth {
+    height: auto;
+    flex-direction: column;
+  }
+  main .content_second > div, main .content_third > div, main .content_fourth > div, main .content_fifth > div, main .content_sixth > div {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  main .content_second .image, main .content_third .image, main .content_fourth .image, main .content_fifth .image, main .content_sixth .image {
+    height: 559px;
+    order: 0;
+  }
+  main .content_second .content-box, main .content_third .content-box, main .content_fourth .content-box, main .content_fifth .content-box, main .content_sixth .content-box {
+    height: auto;
+  }
+  main .content_second .content-box .text-content h2, main .content_third .content-box .text-content h2, main .content_fourth .content-box .text-content h2, main .content_fifth .content-box .text-content h2, main .content_sixth .content-box .text-content h2 {
+    padding-top: 40px;
+  }
+  main .content_second .content-box .text-content h2, main .content_second .content-box .text-content h3, main .content_second .content-box .text-content p, main .content_third .content-box .text-content h2, main .content_third .content-box .text-content h3, main .content_third .content-box .text-content p, main .content_fourth .content-box .text-content h2, main .content_fourth .content-box .text-content h3, main .content_fourth .content-box .text-content p, main .content_fifth .content-box .text-content h2, main .content_fifth .content-box .text-content h3, main .content_fifth .content-box .text-content p, main .content_sixth .content-box .text-content h2, main .content_sixth .content-box .text-content h3, main .content_sixth .content-box .text-content p {
     text-align: left;
+  }
+  main .content_second .content-box .text-content h3, main .content_third .content-box .text-content h3, main .content_fourth .content-box .text-content h3, main .content_fifth .content-box .text-content h3, main .content_sixth .content-box .text-content h3 {
+    justify-content: start;
+  }
+  main .content_second .content-box .text-content a, main .content_third .content-box .text-content a, main .content_fourth .content-box .text-content a, main .content_fifth .content-box .text-content a, main .content_sixth .content-box .text-content a {
+    margin-bottom: 50px;
+  }
+  main .content_second .content-box .up-down-button, main .content_third .content-box .up-down-button, main .content_fourth .content-box .up-down-button, main .content_fifth .content-box .up-down-button, main .content_sixth .content-box .up-down-button {
+    display: none;
+    visibility: hidden;
   }
 }
 .footer {
   margin: 0;
   padding: 0;
   background-color: #333;
-}
-@media screen and (max-width: 960px) {
-  .footer {
-    margin-top: 32px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .footer {
-    margin-top: 55px;
-  }
 }
 .footer__icon {
   padding-top: 71px;
