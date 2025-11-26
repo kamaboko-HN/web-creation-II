@@ -1,5 +1,5 @@
-@use "header";
-@use "footer";
+@use "../header";
+@use "../footer";
 
 *::before,
 *::after{
@@ -9,7 +9,7 @@ body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    
+
     .main{
         margin: 0;
         padding: 60px 0 0;
@@ -33,7 +33,7 @@ body{
             object-fit: cover;
             @media screen and(max-width: 960px) {
                 height: 100%;
-                }
+            }
             }
         }
         &__title_block{
@@ -86,8 +86,19 @@ body{
                     font-size: 16px;
                     font-family: 'Yu Gothic';
                     line-height: 1.9;
+                    & + p {
+                    margin-top: 15px;
+                }
                 }
             }
+        }
+
+        @media screen and (max-width: 960px) {
+            margin-bottom: 53px;
+        }
+        
+        @media screen and (max-width: 480px) {
+            margin-bottom: 43px;
         }
     }
 }

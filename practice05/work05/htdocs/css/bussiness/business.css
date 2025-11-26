@@ -240,7 +240,14 @@ body .main .sentence__content p {
   font-family: "Yu Gothic";
   line-height: 1.9;
 }
-body .main .sentence__content p + p {
-  margin-top: 15px;
+@media screen and (max-width: 960px) {
+  body .main {
+    margin-bottom: 42px;
+  }
 }
-/*# sourceMappingURL=emblem.css.map */
+@media screen and (max-width: 480px) {
+  body .main {
+    margin-bottom: 38px;
+  }
+}
+/*# sourceMappingURL=business.css.map */

@@ -1,5 +1,5 @@
-@use "header";
-@use "footer";
+@use "../header";
+@use "../footer";
 
 *::before,
 *::after{
@@ -91,11 +91,11 @@ body{
         }
 
         @media screen and (max-width: 960px) {
-            margin-bottom: 52px;
+            margin-bottom: 58px;
         }
 
         @media screen and (max-width: 480px) {
-            margin-bottom: 46px;
+            margin-bottom: 52px;
         }
     }
 }

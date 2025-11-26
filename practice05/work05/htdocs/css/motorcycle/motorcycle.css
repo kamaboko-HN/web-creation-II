@@ -240,4 +240,14 @@ body .main .sentence__content p {
   font-family: "Yu Gothic";
   line-height: 1.9;
 }
-/*# sourceMappingURL=business.css.map */
+@media screen and (max-width: 960px) {
+  body .main {
+    margin-bottom: 58px;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .main {
+    margin-bottom: 52px;
+  }
+}
+/*# sourceMappingURL=motorcycle.css.map */
